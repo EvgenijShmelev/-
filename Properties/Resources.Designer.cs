@@ -73,6 +73,16 @@ namespace Прогноз_погоды.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_колокольчик_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-колокольчик-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_солнце_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-солнце-50", resourceCulture);

@@ -41,7 +41,7 @@ namespace Прогноз_погоды
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+            button4.FlatAppearance.BorderSize = 0;
         }
     }
 }

@@ -24,6 +24,10 @@ namespace Прогноз_погоды
             label2.BackColor = Color.Transparent;
             label1.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
+            button2.Parent = pictureBox1;
+            button2.BackColor = Color.Transparent;
+            Weather.getWeather();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,6 +57,8 @@ namespace Прогноз_погоды
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+            button2.FlatAppearance.BorderSize = 0;
             Timer timer = new Timer();
             timer.Interval = 1000;
             timer.Tick += new EventHandler(Timer_Tick);
@@ -114,14 +120,14 @@ namespace Прогноз_погоды
 
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
