@@ -29,7 +29,19 @@ namespace Прогноз_погоды
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form1 form = new Form1();   
+            form.Show();
+        }
 
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit(); 
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

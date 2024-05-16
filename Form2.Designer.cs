@@ -36,11 +36,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkGreen;
-            this.button1.ForeColor = System.Drawing.Color.Yellow;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(167)))), ((int)(((byte)(125)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(258, 53);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(318, 86);
+            this.button1.Size = new System.Drawing.Size(318, 82);
             this.button1.TabIndex = 0;
             this.button1.Text = "Геолокация";
             this.button1.UseVisualStyleBackColor = false;
@@ -48,8 +49,9 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkGreen;
-            this.button2.ForeColor = System.Drawing.Color.Yellow;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(167)))), ((int)(((byte)(125)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(258, 183);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(318, 76);
@@ -59,8 +61,9 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkGreen;
-            this.button3.ForeColor = System.Drawing.Color.Yellow;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(167)))), ((int)(((byte)(125)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(258, 301);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(318, 77);
@@ -72,9 +75,11 @@
             // button4
             // 
             this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.BackgroundImage = global::Прогноз_погоды.Properties.Resources.стрелка_назад;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Transparent;
             this.button4.Location = new System.Drawing.Point(12, 383);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(65, 55);
@@ -88,15 +93,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(199)))), ((int)(((byte)(187)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Form2";
             this.Text = "Form2";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 
         }

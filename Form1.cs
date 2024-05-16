@@ -16,10 +16,14 @@ namespace Прогноз_погоды
         public Form1()
         {
             InitializeComponent();
+            label1.Parent = pictureBox1;
+            label2.Parent = pictureBox1;
+            label3.Parent = pictureBox1;
+            pictureBox3.Parent = pictureBox1;
             label3.BackColor = Color.Transparent;
             label2.BackColor = Color.Transparent;
             label1.BackColor = Color.Transparent;
-            pictureBox4.BackColor = Color.Transparent;
+            pictureBox3.BackColor = Color.Transparent;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -100,6 +104,7 @@ namespace Прогноз_погоды
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            this.Hide();
             Form2 f2 = new Form2();
             f2.Show();
         }
@@ -107,6 +112,16 @@ namespace Прогноз_погоды
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
