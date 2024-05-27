@@ -8,13 +8,16 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Label = System.Reflection.Emit.Label;
 
 namespace Прогноз_погоды
 {
     public partial class Form1 : Form
     {
+        static public string now_icon = "01d";
         public Form1()
         {
+
             InitializeComponent();
             label1.Parent = pictureBox1;
             label2.Parent = pictureBox1;
@@ -26,13 +29,43 @@ namespace Прогноз_погоды
             pictureBox3.BackColor = Color.Transparent;
             button2.Parent = pictureBox1;
             button2.BackColor = Color.Transparent;
+            panel1.Parent = pictureBox1;
             Weather.getWeather();
+
+            Weather.CheckDB();
+            DataTable data = Weather.ComboBox();
+            int id_cuntry = int.Parse(data.Rows[0][0].ToString());
+            Weather.lon_lat = data.Rows[0][1].ToString();
+            button2.FlatAppearance.BorderSize = 0;
+            Timer timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += new EventHandler(Timer_Tick);
+            timer.Tick += new EventHandler(update_main_label);
+            timer.Start();
+
+            
 
         }
         private void update_main_label(object sender, EventArgs e) 
         {
             label1.Text = Math.Round(Convert.ToDecimal(Weather.temp)).ToString() + "°";
+            Check_icon();
+            Weather.Dop_infa();
 
+            label24.Text = Weather.time_pressure1;
+            label25.Text = Weather.time_wind_speed1;
+            label27.Text = Weather.time_temp1;
+            label26.Text = Weather.time_wind_description1;
+
+            label9.Text = Weather.time_pressure1;
+            label13.Text = Weather.time_wind_speed1;
+            label17.Text = Weather.time_temp2;
+            label21.Text = Weather.time_wind_description2;
+
+            label10.Text = Weather.time_pressure1;
+            label14.Text = Weather.time_wind_speed1;
+            label18.Text = Weather.time_temp3;
+            label22.Text = Weather.time_wind_description3;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -62,16 +95,7 @@ namespace Прогноз_погоды
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            Weather.CheckDB();
-            DataTable data = Weather.ComboBox();
-            int id_cuntry = int.Parse(data.Rows[0][0].ToString());
-            Weather.lon_lat = data.Rows[0][1].ToString();
-            button2.FlatAppearance.BorderSize = 0;
-            Timer timer = new Timer();
-            timer.Interval = 1000;
-            timer.Tick += new EventHandler(Timer_Tick);
-            timer.Tick += new EventHandler(update_main_label);
-            timer.Start();
+            
 
         }
         private void Timer_Tick(object sender, EventArgs e)
@@ -159,71 +183,82 @@ namespace Прогноз_погоды
         {
 
         }
-        private void Check_icon(string pogoda)
+        private void Check_icon()
         {
-            if (pogoda != Weather.icon)
+            if (now_icon != Weather.icon)
             {
-
-                switch (pogoda)
+                now_icon= Weather.icon;
+                switch (now_icon)
                 {
                     case "01d":
-                        pictureBox1.BackgroundImage = Properties.Resources.clear_sky;
+                        pictureBox1.Image = Properties.Resources.clear_sky;
                         break;
                     case "02d":
-                        pictureBox1.BackgroundImage = Properties.Resources.few_clouds;
+                        pictureBox1.Image = Properties.Resources.few_clouds;
                         break;
                     case "03d":
-                        pictureBox1.BackgroundImage = Properties.Resources.scattered_clouds;
+                        pictureBox1.Image = Properties.Resources.scattered_clouds;
                         break;
                     case "04d":
-                        pictureBox1.BackgroundImage = Properties.Resources.broken_clouds;
+                        pictureBox1.Image = Properties.Resources.broken_clouds;
                         break;
                     case "09d":
-                        pictureBox1.BackgroundImage = Properties.Resources.shower_rain;
+                        pictureBox1.Image = Properties.Resources.shower_rain;
                         break;
                     case "10d":
-                        pictureBox1.BackgroundImage = Properties.Resources.rain1;
+                        pictureBox1.Image = Properties.Resources.rain1;
                         break;
                     case "11d":
-                        pictureBox1.BackgroundImage = Properties.Resources.thunderstorm;
+                        pictureBox1.Image = Properties.Resources.thunderstorm;
                         break;
                     case "13d":
-                        pictureBox1.BackgroundImage = Properties.Resources.snow;
+                        pictureBox1.Image = Properties.Resources.snow;
                         break;
                     case "50d":
-                        pictureBox1.BackgroundImage = Properties.Resources.mist;
+                        pictureBox1.Image = Properties.Resources.mist;
                         break;
                     case "01n":
-                        pictureBox1.BackgroundImage = Properties.Resources.clear_sky_n;
+                        pictureBox1.Image = Properties.Resources.clear_sky_n;
                         break;
                     case "02n":
-                        pictureBox1.BackgroundImage = Properties.Resources.few_clouds_n;
+                        pictureBox1.Image = Properties.Resources.few_clouds_n;
                         break;
                     case "03n":
-                        pictureBox1.BackgroundImage = Properties.Resources.scattered_clouds_n;
+                        pictureBox1.Image = Properties.Resources.scattered_clouds_n;
+                        
                         break;
                     case "04n":
-                        pictureBox1.BackgroundImage = Properties.Resources.broken_clouds_n;
+                        pictureBox1.Image = Properties.Resources.broken_clouds_n;
                         break;
                     case "09n":
-                        pictureBox1.BackgroundImage = Properties.Resources.shower_rain;
+                        pictureBox1.Image = Properties.Resources.shower_rain;
                         break;
                     case "10n":
-                        pictureBox1.BackgroundImage = Properties.Resources.rain1;
+                        pictureBox1.Image = Properties.Resources.rain1;
                         break;
                     case "11n":
-                        pictureBox1.BackgroundImage = Properties.Resources.thunderstorm;
+                        pictureBox1.Image = Properties.Resources.thunderstorm;
                         break;
                     case "13n":
-                        pictureBox1.BackgroundImage = Properties.Resources.snow_n;
+                        pictureBox1.Image = Properties.Resources.snow_n;
                         break;
                     case "50n":
-                        pictureBox1.BackgroundImage = Properties.Resources.mist_n;
+                        pictureBox1.Image = Properties.Resources.mist_n;
                         break;
                 }
             }
         }
         private void PictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
         {
 
         }

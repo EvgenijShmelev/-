@@ -82,11 +82,39 @@ namespace Прогноз_погоды
                 }
             }
             return dt;
-            //}
-            //catch
-            //{
-            //    return null;
-            //}
+        }
+        public static string time_temp1 = "";
+        public static string time_temp2 = "";
+        public static string time_temp3 = "";
+        public static string time_pressure1 = "";
+        public static string time_pressure2 = "";
+        public static string time_pressure3 = "";
+        public static string time_wind_speed1 = "";
+        public static string time_wind_speed2 = "";
+        public static string time_wind_speed3 = "";
+        public static string time_wind_description1 = "";
+        public static string time_wind_description2 = "";
+        public static string time_wind_description3 = "";
+        public static async void Dop_infa()
+        {
+            string response = await client.GetStringAsync(url_day_array);
+            string result = response;
+            var json = JObject.Parse(result);
+            var array1 = json["list"][1].ToString();
+            time_temp1 = json["list"][1]["main"]["temp"].ToString();
+            time_pressure1 = json["list"][1]["main"]["pressure"].ToString();
+            time_wind_speed1 = json["list"][1]["wind"]["speed"].ToString();
+            time_wind_description1 = json["list"][1]["weather"][0]["description"].ToString();
+            var array2 = json["list"][2].ToString();
+            time_temp2 = json["list"][2]["main"]["temp"].ToString();
+            time_pressure2 = json["list"][2]["main"]["pressure"].ToString();
+            time_wind_speed2 = json["list"][2]["wind"]["speed"].ToString();
+            time_wind_description2 = json["list"][2]["weather"][0]["description"].ToString();
+            var array3 = json["list"][3].ToString();
+            time_temp3 = json["list"][3]["main"]["temp"].ToString();
+            time_pressure3 = json["list"][3]["main"]["pressure"].ToString();
+            time_wind_speed3 = json["list"][3]["wind"]["speed"].ToString();
+            time_wind_description3 = json["list"][3]["weather"][0]["description"].ToString();
         }
 
     }
