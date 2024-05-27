@@ -26,6 +26,7 @@ namespace Прогноз_погоды
             pictureBox3.BackColor = Color.Transparent;
             button2.Parent = pictureBox1;
             button2.BackColor = Color.Transparent;
+            Weather.getWeather();
 
         }
 
@@ -56,20 +57,13 @@ namespace Прогноз_погоды
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Weather.getWeather();
-            label1.Text = Weather.temp;
+            
             button2.FlatAppearance.BorderSize = 0;
             Timer timer = new Timer();
             timer.Interval = 1000;
             timer.Tick += new EventHandler(Timer_Tick);
-            timer.Tick += new EventHandler(UpdateWeather);
             timer.Start();
         }
-        public void UpdateWeather(object sender, EventArgs e) 
-        {
-            label1.Text = Weather.temp;
-        }
-
         private void Timer_Tick(object sender, EventArgs e) 
         {
             int h = DateTime.Now.Hour;
