@@ -109,9 +109,77 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\broken_clouds.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-колокольчик-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broken_clouds_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_sky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_sky_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\few_clouds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\few_clouds_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mist_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_11_2024-05-27_17-40-48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scattered_clouds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scattered_clouds_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shower_rain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thunderstorm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\просто.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-солнце-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\моросящая погода1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\стрелка назад.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

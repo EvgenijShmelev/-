@@ -32,7 +32,6 @@ namespace Прогноз_погоды
         private void update_main_label(object sender, EventArgs e) 
         {
             label1.Text = Math.Round(Convert.ToDecimal(Weather.temp)).ToString() + "°";
-            
 
         }
 
@@ -160,69 +159,70 @@ namespace Прогноз_погоды
         {
 
         }
-        private void Proverka(string pogoda)
+        private void Check_icon(string pogoda)
         {
-            //switch (pogoda)
-            //{
-            //    case "01d":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "02d":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "03d":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "04d":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "09d":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "10d":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "11d":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "13d":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "50d":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "01n":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "02n":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "03n":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "04n":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "09n":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "10n":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "11n":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "13n":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //    case "50n":
-            //        pictureBox1.BackgroundImage = Properties.Resources.Image1;
-            //        break;
-            //}
+            if (pogoda != Weather.icon)
+            {
 
-
+                switch (pogoda)
+                {
+                    case "01d":
+                        pictureBox1.BackgroundImage = Properties.Resources.clear_sky;
+                        break;
+                    case "02d":
+                        pictureBox1.BackgroundImage = Properties.Resources.few_clouds;
+                        break;
+                    case "03d":
+                        pictureBox1.BackgroundImage = Properties.Resources.scattered_clouds;
+                        break;
+                    case "04d":
+                        pictureBox1.BackgroundImage = Properties.Resources.broken_clouds;
+                        break;
+                    case "09d":
+                        pictureBox1.BackgroundImage = Properties.Resources.shower_rain;
+                        break;
+                    case "10d":
+                        pictureBox1.BackgroundImage = Properties.Resources.rain1;
+                        break;
+                    case "11d":
+                        pictureBox1.BackgroundImage = Properties.Resources.thunderstorm;
+                        break;
+                    case "13d":
+                        pictureBox1.BackgroundImage = Properties.Resources.snow;
+                        break;
+                    case "50d":
+                        pictureBox1.BackgroundImage = Properties.Resources.mist;
+                        break;
+                    case "01n":
+                        pictureBox1.BackgroundImage = Properties.Resources.clear_sky_n;
+                        break;
+                    case "02n":
+                        pictureBox1.BackgroundImage = Properties.Resources.few_clouds_n;
+                        break;
+                    case "03n":
+                        pictureBox1.BackgroundImage = Properties.Resources.scattered_clouds_n;
+                        break;
+                    case "04n":
+                        pictureBox1.BackgroundImage = Properties.Resources.broken_clouds_n;
+                        break;
+                    case "09n":
+                        pictureBox1.BackgroundImage = Properties.Resources.shower_rain;
+                        break;
+                    case "10n":
+                        pictureBox1.BackgroundImage = Properties.Resources.rain1;
+                        break;
+                    case "11n":
+                        pictureBox1.BackgroundImage = Properties.Resources.thunderstorm;
+                        break;
+                    case "13n":
+                        pictureBox1.BackgroundImage = Properties.Resources.snow_n;
+                        break;
+                    case "50n":
+                        pictureBox1.BackgroundImage = Properties.Resources.mist_n;
+                        break;
+                }
+            }
         }
-
         private void PictureBox1_Click_1(object sender, EventArgs e)
         {
 

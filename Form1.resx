@@ -121,7 +121,7 @@
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAA0xJREFUaEPtmctqFEEUhg8xwQuKKCou1L2XV1AxbgRBRcaHMCFq3IgbcRX3+gTe
+        DQAACw0B7QfALAAAA0xJREFUaEPtmctqFEEUhg8xwQuKKCou1L2XV1AxbgRBRcaHMCFq3IgbcRX3+gTe
         HkRdCkkmSkbHhSJoSHq8TfCOKf9z+m/N9OBMV09P90T6g0OmTlWdOn9XTU11RUpKSorFNeQB7DGLaxeI
         cGosrl1KIYPGwAlxH2W7eykbWExMWiHOyQjG3MZiNpiIhnx2gVTdW9lJdyLSCNEx0GcG431y72Ur3b3j
         6rIeQWctqUDmfMSg/SP0e8hiV0yEjhGONaszw6psaBmgITW3KLtZlRkxEfP9GMPop5jcRES0TX2KDSCO
@@ -1550,5 +1550,66 @@
         iiimgEooopgSRmphRRS6gBFV3+9RRQAhOaSiimAUUUUAFJRRSARTmhqKKAG4pKKKYgooooAKKKKACiii
         gD//2Q==
 </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bell.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="broken_clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\broken_clouds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="broken_clouds_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\broken_clouds_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear_sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\clear_sky.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear_sky_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\clear_sky_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="few_clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\few_clouds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="few_clouds_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\few_clouds_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mist_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mist_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\moon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo_11_2024-05-27_17-40-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\photo_11_2024-05-27_17-40-48.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\rain1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scattered_clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\scattered_clouds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scattered_clouds_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\scattered_clouds_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shower_rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\shower_rain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\snow.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snow_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\snow_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sun.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thunderstorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\thunderstorm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="просто" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\просто.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

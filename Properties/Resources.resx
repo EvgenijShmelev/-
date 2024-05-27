@@ -121,31 +121,67 @@
   <data name="icons8-солнце-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-солнце-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="стрелочка назад" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\стрелочка назад.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Солнечная погода" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Солнечная погода.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="моросящая погода1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\моросящая погода1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="12345" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\12345.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="моросящая погода11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\моросящая погода11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png-transparent-sun-logo-sunlight-silhouette" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-sun-logo-sunlight-silhouette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="солнце" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\солнце.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="стрелка назад" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\стрелка назад.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-колокольчик-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-колокольчик-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="broken_clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\broken_clouds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="broken_clouds_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\broken_clouds_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear_sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear_sky.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear_sky_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear_sky_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="few_clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\few_clouds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="few_clouds_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\few_clouds_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mist_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mist_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rain1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scattered_clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scattered_clouds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scattered_clouds_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scattered_clouds_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shower_rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shower_rain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snow.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snow_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snow_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thunderstorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thunderstorm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="моросящая_погода1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\моросящая погода1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="просто" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\просто.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="стрелка_назад" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\стрелка назад.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

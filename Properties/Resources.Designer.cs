@@ -63,9 +63,59 @@ namespace Прогноз_погоды.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _12345 {
+        internal static System.Drawing.Bitmap broken_clouds {
             get {
-                object obj = ResourceManager.GetObject("12345", resourceCulture);
+                object obj = ResourceManager.GetObject("broken_clouds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap broken_clouds_n {
+            get {
+                object obj = ResourceManager.GetObject("broken_clouds_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clear_sky {
+            get {
+                object obj = ResourceManager.GetObject("clear_sky", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clear_sky_n {
+            get {
+                object obj = ResourceManager.GetObject("clear_sky_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap few_clouds {
+            get {
+                object obj = ResourceManager.GetObject("few_clouds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap few_clouds_n {
+            get {
+                object obj = ResourceManager.GetObject("few_clouds_n", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +143,9 @@ namespace Прогноз_погоды.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap png_transparent_sun_logo_sunlight_silhouette {
+        internal static System.Drawing.Bitmap mist {
             get {
-                object obj = ResourceManager.GetObject("png-transparent-sun-logo-sunlight-silhouette", resourceCulture);
+                object obj = ResourceManager.GetObject("mist", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +153,9 @@ namespace Прогноз_погоды.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap моросящая_погода1 {
+        internal static System.Drawing.Bitmap mist_n {
             get {
-                object obj = ResourceManager.GetObject("моросящая погода1", resourceCulture);
+                object obj = ResourceManager.GetObject("mist_n", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +163,9 @@ namespace Прогноз_погоды.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap моросящая_погода11 {
+        internal static System.Drawing.Bitmap moon {
             get {
-                object obj = ResourceManager.GetObject("моросящая погода11", resourceCulture);
+                object obj = ResourceManager.GetObject("moon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +173,9 @@ namespace Прогноз_погоды.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Солнечная_погода {
+        internal static System.Drawing.Bitmap rain1 {
             get {
-                object obj = ResourceManager.GetObject("Солнечная погода", resourceCulture);
+                object obj = ResourceManager.GetObject("rain1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +183,69 @@ namespace Прогноз_погоды.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap солнце {
+        internal static System.Drawing.Bitmap scattered_clouds {
             get {
-                object obj = ResourceManager.GetObject("солнце", resourceCulture);
+                object obj = ResourceManager.GetObject("scattered_clouds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scattered_clouds_n {
+            get {
+                object obj = ResourceManager.GetObject("scattered_clouds_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shower_rain {
+            get {
+                object obj = ResourceManager.GetObject("shower_rain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap snow {
+            get {
+                object obj = ResourceManager.GetObject("snow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap snow_n {
+            get {
+                object obj = ResourceManager.GetObject("snow_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thunderstorm {
+            get {
+                object obj = ResourceManager.GetObject("thunderstorm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap просто {
+            get {
+                object obj = ResourceManager.GetObject("просто", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -145,17 +255,7 @@ namespace Прогноз_погоды.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap стрелка_назад {
             get {
-                object obj = ResourceManager.GetObject("стрелка назад", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap стрелочка_назад {
-            get {
-                object obj = ResourceManager.GetObject("стрелочка назад", resourceCulture);
+                object obj = ResourceManager.GetObject("стрелка_назад", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
