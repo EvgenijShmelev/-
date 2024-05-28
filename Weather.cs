@@ -9,6 +9,7 @@ using Newtonsoft.Json.Linq;
 using System.Data.SQLite;
 using System.IO;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Прогноз_погоды
 {
@@ -26,9 +27,17 @@ namespace Прогноз_погоды
         static public string wind_speed;
         static public string temp;
         static public string description;
-        static public async void getWeather()
+        static public void UpdateUrl()
         {
+            url_day = $"https://api.openweathermap.org/data/2.5/weather?{lon_lat}&appid={API}&units=metric&lang=ru";
+            
+        }
+        static public async void getWeather()
+        
+        {
+            UpdateUrl();
             string response = await client.GetStringAsync(url_day);
+            Console.WriteLine(url_day);
             string result = response;
             var json = JObject.Parse(result);
             temp = json["main"]["temp"].ToString();
@@ -49,7 +58,7 @@ namespace Прогноз_погоды
                     Application.Exit();
                 }
 
-
+                
 
                 SQLiteConnection.CreateFile("Pogoda.db");
                 using (SQLiteConnection conect = new SQLiteConnection(db_info))
@@ -58,8 +67,17 @@ namespace Прогноз_погоды
                     string command = "CREATE TABLE \"Города\" (\"id\" INTEGER,\"Название_города\" TEXT,\"Долгота_и_Ширина\" TEXT,PRIMARY KEY(\"id\" AUTOINCREMENT)); " +
                         "CREATE TABLE \"User\" (\"ID_User\"INTEGER NOT NULL,\"id\"INTEGER,FOREIGN KEY(\"id\") REFERENCES \"Города\"(\"id\"),PRIMARY KEY(\"ID_User\" AUTOINCREMENT)); " +
                         "INSERT INTO \"Города\" (\"id\", \"Название_города\",\"Долгота_и_Ширина\") VALUES ('1', 'Москва','lat=55.7558&lon=37.617'); " +
-                        "INSERT INTO \"User\" (\"ID_User\", \"id\") VALUES ('1', '1'); ";
-
+                        "INSERT INTO \"User\" (\"ID_User\", \"id\") VALUES ('1', '1'); " +
+                        "INSERT INTO \"Города\" (\"id\", \"Название_города\", \"Долгота_и_Ширина\") VALUES ('2', 'Самара', 'lat=53.2001&lon=50.15'); " +
+                        "INSERT INTO \"Города\" (\"id\", \"Название_города\", \"Долгота_и_Ширина\") VALUES ('3', 'Саратов', 'lat=51.5667&lon=46.0333'); " +
+                        "INSERT INTO \"Города\" (\"id\", \"Название_города\", \"Долгота_и_Ширина\") VALUES ('4', 'Ростов-на-Дону', 'lat=47.2313&lon=39.7233'); " +
+                        "INSERT INTO \"Города\" (\"id\", \"Название_города\", \"Долгота_и_Ширина\") VALUES ('5', 'Санкт-Петербург', 'lat=59.9386&lon=30.3141');" +
+                        "INSERT INTO \"Города\" (\"id\", \"Название_города\", \"Долгота_и_Ширина\") VALUES ('6', 'Хабаровск', 'lat=48.4827&lon=135.084');" +
+                        "INSERT INTO \"Города\" (\"id\", \"Название_города\", \"Долгота_и_Ширина\") VALUES ('7', 'Владивосток', 'lat=43.1056&lon=131.874');" +
+                        "INSERT INTO \"Города\" (\"id\", \"Название_города\", \"Долгота_и_Ширина\") VALUES ('8', 'Нижний Новгород', 'lat=56.3287&lon=44.002');" +
+                        "INSERT INTO \"Города\" (\"id\", \"Название_города\", \"Долгота_и_Ширина\") VALUES ('9', 'Архангельск', 'lat=64.5401&lon=40.5433');" +
+                        "INSERT INTO \"Города\" (\"id\", \"Название_города\", \"Долгота_и_Ширина\") VALUES ('10', 'Сочи', 'lat=43.5992&lon=39.7257');";
+                        
                     using (SQLiteCommand cmd = new SQLiteCommand(command, conect))
                     {
                         conect.Open();
@@ -116,6 +134,20 @@ namespace Прогноз_погоды
             time_wind_speed3 = json["list"][3]["wind"]["speed"].ToString();
             time_wind_description3 = json["list"][3]["weather"][0]["description"].ToString();
         }
-
+        public static DataTable Combobox_feel() 
+        {
+            DataTable dota = new DataTable();   
+            using (SQLiteConnection conect = new SQLiteConnection(db_info))
+            {
+                string command = "SELECT Название_города, Долгота_и_Ширина FROM Города";
+                using (SQLiteCommand cmd = new SQLiteCommand(command, conect))
+                {
+                    conect.Open();
+                    SQLiteDataAdapter dt = new SQLiteDataAdapter(command,conect);
+                    dt.Fill(dota);
+                }
+            }  
+            return dota;
+        }
     }
 } 

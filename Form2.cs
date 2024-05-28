@@ -19,7 +19,9 @@ namespace Прогноз_погоды
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Geolocation_form form3 = new Geolocation_form();
+            form3.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -30,18 +32,24 @@ namespace Прогноз_погоды
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 form = new Form1();   
+            Form1 form = new Form1();
             form.Show();
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit(); 
+          Application.Exit();
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
             button4.FlatAppearance.BorderSize = 0;
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

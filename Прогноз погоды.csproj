@@ -76,6 +76,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Yvedomlenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yvedomlenia.Designer.cs">
+      <DependentUpon>Yvedomlenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Частота обновления данных.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Частота обновления данных.Designer.cs">
+      <DependentUpon>Частота обновления данных.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +101,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yvedomlenia.resx">
+      <DependentUpon>Yvedomlenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Частота обновления данных.resx">
+      <DependentUpon>Частота обновления данных.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

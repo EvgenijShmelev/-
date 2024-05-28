@@ -14,7 +14,7 @@ namespace Прогноз_погоды
 {
     public partial class Form1 : Form
     {
-        static public string now_icon = "01d";
+        static public string now_icon = "";
         public Form1()
         {
 
@@ -48,10 +48,11 @@ namespace Прогноз_погоды
         }
         private void update_main_label(object sender, EventArgs e) 
         {
-            label1.Text = Math.Round(Convert.ToDecimal(Weather.temp)).ToString() + "°";
+            
             Check_icon();
             Weather.Dop_infa();
-
+            Weather.getWeather();
+            label1.Text = Math.Round(Convert.ToDecimal(Weather.temp)).ToString() + "°";
             label24.Text = Weather.time_pressure1;
             label25.Text = Weather.time_wind_speed1;
             label27.Text = Weather.time_temp1;
@@ -66,6 +67,8 @@ namespace Прогноз_погоды
             label14.Text = Weather.time_wind_speed1;
             label18.Text = Weather.time_temp3;
             label22.Text = Weather.time_wind_description3;
+
+            label2.Text = Weather.description;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -219,13 +222,26 @@ namespace Прогноз_погоды
                         break;
                     case "01n":
                         pictureBox1.Image = Properties.Resources.clear_sky_n;
+                        foreach (Control control in panel1.Controls)
+                        {
+                            if (control is System.Windows.Forms.Label)
+                            {
+                                control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                            }
+                        }
+                        foreach (Control control in pictureBox1.Controls)
+                        {
+                            if (control is System.Windows.Forms.Label)
+                            {
+                                control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                            }
+                        }
                         break;
                     case "02n":
                         pictureBox1.Image = Properties.Resources.few_clouds_n;
                         break;
                     case "03n":
-                        pictureBox1.Image = Properties.Resources.scattered_clouds_n;
-                        
+                        pictureBox1.Image = Properties.Resources.scattered_clouds_n;  
                         break;
                     case "04n":
                         pictureBox1.Image = Properties.Resources.broken_clouds_n;
