@@ -34,8 +34,6 @@ namespace Прогноз_погоды
 
             Weather.CheckDB();
             DataTable data = Weather.ComboBox();
-            int id_cuntry = int.Parse(data.Rows[0][0].ToString());
-            Weather.lon_lat = data.Rows[0][1].ToString();
             button2.FlatAppearance.BorderSize = 0;
             Timer timer = new Timer();
             timer.Interval = 1000;
@@ -98,7 +96,7 @@ namespace Прогноз_погоды
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            now_icon = "";
 
         }
         private void Timer_Tick(object sender, EventArgs e)
@@ -262,6 +260,7 @@ namespace Прогноз_погоды
                         pictureBox1.Image = Properties.Resources.mist_n;
                         break;
                 }
+                Console.WriteLine("switch");
             }
         }
         private void PictureBox1_Click_1(object sender, EventArgs e)

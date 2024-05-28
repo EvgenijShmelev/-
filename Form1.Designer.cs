@@ -92,7 +92,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.Menu;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(59, 57);
@@ -107,7 +107,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(81, 59);
+            this.label1.Location = new System.Drawing.Point(3, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 54);
             this.label1.TabIndex = 6;
@@ -118,7 +118,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Georgia", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(263, 59);
+            this.label2.Location = new System.Drawing.Point(223, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(145, 54);
             this.label2.TabIndex = 7;
@@ -131,7 +131,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Font = new System.Drawing.Font("Georgia", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(480, 59);
+            this.label3.Location = new System.Drawing.Point(521, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(187, 54);
             this.label3.TabIndex = 8;
@@ -146,7 +146,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(743, 11);
+            this.button2.Location = new System.Drawing.Point(755, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(48, 38);
@@ -209,7 +209,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(72, 194);
+            this.label8.Location = new System.Drawing.Point(17, 194);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 19);
             this.label8.TabIndex = 15;
@@ -242,7 +242,7 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(72, 235);
+            this.label12.Location = new System.Drawing.Point(12, 235);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(129, 19);
             this.label12.TabIndex = 19;
@@ -276,7 +276,7 @@
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(72, 276);
+            this.label16.Location = new System.Drawing.Point(12, 276);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(106, 19);
             this.label16.TabIndex = 23;
@@ -309,7 +309,7 @@
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.Location = new System.Drawing.Point(72, 319);
+            this.label20.Location = new System.Drawing.Point(12, 319);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(65, 19);
             this.label20.TabIndex = 27;
@@ -321,7 +321,7 @@
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label21.Location = new System.Drawing.Point(390, 319);
+            this.label21.Location = new System.Drawing.Point(367, 319);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(64, 19);
             this.label21.TabIndex = 28;
@@ -365,7 +365,7 @@
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label26.Location = new System.Drawing.Point(190, 319);
+            this.label26.Location = new System.Drawing.Point(111, 319);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(64, 19);
             this.label26.TabIndex = 33;
@@ -388,7 +388,7 @@
             this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label28.Location = new System.Drawing.Point(72, 155);
+            this.label28.Location = new System.Drawing.Point(18, 155);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(59, 19);
             this.label28.TabIndex = 35;
@@ -421,7 +421,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label27);
             this.panel1.Location = new System.Drawing.Point(0, 117);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(806, 497);
             this.panel1.TabIndex = 37;
