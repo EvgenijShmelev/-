@@ -14,13 +14,16 @@ namespace Прогноз_погоды
 {
     public partial class Form1 : Form
     {
+        static public Timer timer3 = new Timer();
+        static public int yvedomlenia = 0;
         static public string now_icon = "";
         public Form1()
+
         {
 
             InitializeComponent();
-            
-            
+
+
             label3.BackColor = Color.Transparent;
             label2.BackColor = Color.Transparent;
             label1.BackColor = Color.Transparent;
@@ -43,8 +46,26 @@ namespace Прогноз_погоды
             timer2.Tick += new EventHandler(Check_icon);
             timer2.Start();
 
+            
+            timer3.Interval = 30000;
+            timer3.Tick += new EventHandler(soobsheniya);
+            timer3.Start();
+        }
+        private static void soobsheniya(object sender, EventArgs e) 
+        {
+            if (yvedomlenia <= 2 && Yvedomlenia.Prosto == true)
+            {
+                MessageBox.Show("Вам пришло уведомление. Нажмите на колоколчик в самом первом окне");
+                yvedomlenia = yvedomlenia + 1;
 
-
+            }
+            else if (yvedomlenia <= 2 && Yvedomlenia.Prosto == false) 
+            {
+            }
+            else
+            {
+                timer3.Stop();
+            }
         }
         private void update_main_label(object sender, EventArgs e) 
         {
@@ -165,7 +186,7 @@ namespace Прогноз_погоды
         private void Button2_Click(object sender, EventArgs e)
         {
             Kolokol form = new Kolokol();
-            form.ShowDialog();
+            form.Show();
         }
 
         private void Label5_Click(object sender, EventArgs e)
@@ -206,19 +227,75 @@ namespace Прогноз_погоды
                         break;
                     case "09d":
                         this.BackgroundImage = Properties.Resources.shower_rain;
-                        break;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    break;
                     case "10d":
                         this.BackgroundImage = Properties.Resources.rain1;
-                        break;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    break;
                     case "11d":
                         this.BackgroundImage = Properties.Resources.thunderstorm;
-                        break;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Red; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Red; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    break;
                     case "13d":
                         this.BackgroundImage = Properties.Resources.snow;
                         break;
                     case "50d":
                         this.BackgroundImage = Properties.Resources.mist;
-                        break;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Red; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Red; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    break;
                     case "01n":
                         this.BackgroundImage = Properties.Resources.clear_sky_n;
                         foreach (Control control in panel1.Controls)
@@ -235,31 +312,152 @@ namespace Прогноз_погоды
                                 control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
                             }
                         }
+                        pictureBox3.Image = Properties.Resources.moon;
                         break;
                     case "02n":
                         this.BackgroundImage = Properties.Resources.few_clouds_n;
+                    foreach (Control control in panel1.Controls)
+                        {
+                            if (control is System.Windows.Forms.Label)
+                            {
+                                control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                            }
+                        }
+                        foreach (Control control in this.Controls)
+                        {
+                            if (control is System.Windows.Forms.Label)
+                            {
+                                control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                            }
+                        }
+                        pictureBox3.Image = Properties.Resources.moon;
                         break;
                     case "03n":
-                        this.BackgroundImage = Properties.Resources.scattered_clouds_n;  
-                        break;
+                        this.BackgroundImage = Properties.Resources.scattered_clouds_n;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    pictureBox3.Image = Properties.Resources.moon;
+                    break;
                     case "04n":
                         this.BackgroundImage = Properties.Resources.broken_clouds_n;
-                        break;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    pictureBox3.Image = Properties.Resources.moon;
+                    break;
                     case "09n":
                         this.BackgroundImage = Properties.Resources.shower_rain;
-                        break;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    pictureBox3.Image = Properties.Resources.moon;
+                    break;
                     case "10n":
                         this.BackgroundImage = Properties.Resources.rain1;
-                        break;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    pictureBox3.Image = Properties.Resources.moon;
+                    break;
                     case "11n":
                         this.BackgroundImage = Properties.Resources.thunderstorm;
-                        break;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    pictureBox3.Image = Properties.Resources.moon;
+                    break;
                     case "13n":
                         this.BackgroundImage = Properties.Resources.snow_n;
-                        break;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    pictureBox3.Image = Properties.Resources.moon;
+                    break;
                     case "50n":
                         this.BackgroundImage = Properties.Resources.mist_n;
-                        break;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is System.Windows.Forms.Label)
+                        {
+                            control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
+                        }
+                    }
+                    pictureBox3.Image = Properties.Resources.moon;
+                    break;
                 }
         }
         private void PictureBox1_Click_1(object sender, EventArgs e)

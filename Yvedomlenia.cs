@@ -28,10 +28,12 @@ namespace Прогноз_погоды
             {
                 MessageBox.Show("Уведомления успешно включены", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Prosto = true;
-            }
-            
+            }          
         }
-
+        //static public void UpdateProsto()
+        //{
+        //    Prosto =
+        //}
         private void Button1_Click(object sender, EventArgs e)
         {
             if (Prosto == false)
