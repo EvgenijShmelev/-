@@ -19,6 +19,13 @@ namespace Прогноз_погоды
 
         private void Button4_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form2 form = new Form2();
+            form.Show();
+        }
+        private void Частота_обновления_данных_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
 
         }
     }

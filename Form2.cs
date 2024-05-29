@@ -26,7 +26,9 @@ namespace Прогноз_погоды
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Частота_обновления_данных form5 = new Частота_обновления_данных();
+            form5.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -49,7 +51,9 @@ namespace Прогноз_погоды
 
         private void Button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Yvedomlenia form4 = new Yvedomlenia();
+            form4.Show();
         }
     }
 }

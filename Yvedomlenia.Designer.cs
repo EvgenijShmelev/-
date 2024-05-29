@@ -31,6 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.sqLiteCommand1 = new System.Data.SQLite.SQLiteCommand();
             this.SuspendLayout();
             // 
             // button1
@@ -45,6 +46,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Отключить Уведомления";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -58,6 +60,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Включить Уведомления";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button4
             // 
@@ -74,6 +77,11 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // sqLiteCommand1
+            // 
+            this.sqLiteCommand1.CommandText = null;
             // 
             // Yvedomlenia
             // 
@@ -95,5 +103,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
+        private System.Data.SQLite.SQLiteCommand sqLiteCommand1;
     }
 }

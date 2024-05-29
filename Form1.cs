@@ -19,17 +19,15 @@ namespace Прогноз_погоды
         {
 
             InitializeComponent();
-            label1.Parent = pictureBox1;
-            label2.Parent = pictureBox1;
-            label3.Parent = pictureBox1;
-            pictureBox3.Parent = pictureBox1;
+            
+            
             label3.BackColor = Color.Transparent;
             label2.BackColor = Color.Transparent;
             label1.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
-            button2.Parent = pictureBox1;
+            
             button2.BackColor = Color.Transparent;
-            panel1.Parent = pictureBox1;
+            
             Weather.getWeather();
 
             Weather.CheckDB();
@@ -40,14 +38,16 @@ namespace Прогноз_погоды
             timer.Tick += new EventHandler(Timer_Tick);
             timer.Tick += new EventHandler(update_main_label);
             timer.Start();
+            Timer timer2 = new Timer();
+            timer2.Interval = 3000;
+            timer2.Tick += new EventHandler(Check_icon);
+            timer2.Start();
 
-            
+
 
         }
         private void update_main_label(object sender, EventArgs e) 
         {
-            
-            Check_icon();
             Weather.Dop_infa();
             Weather.getWeather();
             label1.Text = Math.Round(Convert.ToDecimal(Weather.temp)).ToString() + "°";
@@ -184,42 +184,40 @@ namespace Прогноз_погоды
         {
 
         }
-        private void Check_icon()
-        {
-            if (now_icon != Weather.icon)
-            {
+        private void Check_icon(object sender, EventArgs e)
+        { 
                 now_icon= Weather.icon;
                 switch (now_icon)
                 {
                     case "01d":
-                        pictureBox1.Image = Properties.Resources.clear_sky;
+                        this.BackgroundImage = Properties.Resources.clear_sky;         
                         break;
                     case "02d":
-                        pictureBox1.Image = Properties.Resources.few_clouds;
+                        this.BackgroundImage = Properties.Resources.few_clouds;
                         break;
                     case "03d":
-                        pictureBox1.Image = Properties.Resources.scattered_clouds;
+                        this.BackgroundImage = Properties.Resources.scattered_clouds;
                         break;
                     case "04d":
-                        pictureBox1.Image = Properties.Resources.broken_clouds;
+                        this.BackgroundImage = Properties.Resources.broken_clouds;
                         break;
                     case "09d":
-                        pictureBox1.Image = Properties.Resources.shower_rain;
+                        this.BackgroundImage = Properties.Resources.shower_rain;
                         break;
                     case "10d":
-                        pictureBox1.Image = Properties.Resources.rain1;
+                        this.BackgroundImage = Properties.Resources.rain1;
                         break;
                     case "11d":
-                        pictureBox1.Image = Properties.Resources.thunderstorm;
+                        this.BackgroundImage = Properties.Resources.thunderstorm;
                         break;
                     case "13d":
-                        pictureBox1.Image = Properties.Resources.snow;
+                        this.BackgroundImage = Properties.Resources.snow;
                         break;
                     case "50d":
-                        pictureBox1.Image = Properties.Resources.mist;
+                        this.BackgroundImage = Properties.Resources.mist;
                         break;
                     case "01n":
-                        pictureBox1.Image = Properties.Resources.clear_sky_n;
+                        this.BackgroundImage = Properties.Resources.clear_sky_n;
                         foreach (Control control in panel1.Controls)
                         {
                             if (control is System.Windows.Forms.Label)
@@ -227,7 +225,7 @@ namespace Прогноз_погоды
                                 control.ForeColor = Color.Blue; // здесь можно указать любой другой цвет
                             }
                         }
-                        foreach (Control control in pictureBox1.Controls)
+                        foreach (Control control in this.Controls)
                         {
                             if (control is System.Windows.Forms.Label)
                             {
@@ -236,32 +234,30 @@ namespace Прогноз_погоды
                         }
                         break;
                     case "02n":
-                        pictureBox1.Image = Properties.Resources.few_clouds_n;
+                        this.BackgroundImage = Properties.Resources.few_clouds_n;
                         break;
                     case "03n":
-                        pictureBox1.Image = Properties.Resources.scattered_clouds_n;  
+                        this.BackgroundImage = Properties.Resources.scattered_clouds_n;  
                         break;
                     case "04n":
-                        pictureBox1.Image = Properties.Resources.broken_clouds_n;
+                        this.BackgroundImage = Properties.Resources.broken_clouds_n;
                         break;
                     case "09n":
-                        pictureBox1.Image = Properties.Resources.shower_rain;
+                        this.BackgroundImage = Properties.Resources.shower_rain;
                         break;
                     case "10n":
-                        pictureBox1.Image = Properties.Resources.rain1;
+                        this.BackgroundImage = Properties.Resources.rain1;
                         break;
                     case "11n":
-                        pictureBox1.Image = Properties.Resources.thunderstorm;
+                        this.BackgroundImage = Properties.Resources.thunderstorm;
                         break;
                     case "13n":
-                        pictureBox1.Image = Properties.Resources.snow_n;
+                        this.BackgroundImage = Properties.Resources.snow_n;
                         break;
                     case "50n":
-                        pictureBox1.Image = Properties.Resources.mist_n;
+                        this.BackgroundImage = Properties.Resources.mist_n;
                         break;
                 }
-                Console.WriteLine("switch");
-            }
         }
         private void PictureBox1_Click_1(object sender, EventArgs e)
         {
@@ -274,6 +270,11 @@ namespace Прогноз_погоды
         }
 
         private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

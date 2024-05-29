@@ -30,6 +30,7 @@ namespace Прогноз_погоды
         static public void UpdateUrl()
         {
             url_day = $"https://api.openweathermap.org/data/2.5/weather?{lon_lat}&appid={API}&units=metric&lang=ru";
+            url_day_array = $"https://api.openweathermap.org/data/2.5/forecast?{lon_lat}&appid={API}&units=metric&lang=ru";
             
         }
         static public async void getWeather()
@@ -115,6 +116,7 @@ namespace Прогноз_погоды
         public static string time_wind_description3 = "";
         public static async void Dop_infa()
         {
+            UpdateUrl();
             string response = await client.GetStringAsync(url_day_array);
             string result = response;
             var json = JObject.Parse(result);

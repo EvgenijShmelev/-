@@ -16,5 +16,27 @@ namespace Прогноз_погоды
         {
             InitializeComponent();
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Вы уже включили уведомления!");
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Вы уже выключили уведомления!");
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 form = new Form2();
+            form.Show();
+        }
+        private void Yvedomlenia_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }
