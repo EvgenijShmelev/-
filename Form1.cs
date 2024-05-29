@@ -185,7 +185,7 @@ namespace Прогноз_погоды
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            Kolokol form = new Kolokol();
+            Kolokols form = new Kolokols();
             form.Show();
         }
 
