@@ -12,6 +12,7 @@ namespace Прогноз_погоды
 {
     public partial class Yvedomlenia : Form
     {
+        static public bool Prosto = false;
         public Yvedomlenia()
         {
             InitializeComponent();
@@ -19,12 +20,29 @@ namespace Прогноз_погоды
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Вы уже включили уведомления!");
+            if (Prosto == true)
+            {
+                MessageBox.Show("Вы уже включили уведомления", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else 
+            {
+                MessageBox.Show("Уведомления успешно включены", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Prosto = true;
+            }
+            
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Вы уже выключили уведомления!");
+            if (Prosto == false)
+            {
+                MessageBox.Show("Вы уже отключили уведомления", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+            }
+            else
+            {
+                MessageBox.Show("Уведомления успешно отключены", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Prosto = false;
+            }
         }
 
         private void Button4_Click(object sender, EventArgs e)

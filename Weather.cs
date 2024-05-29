@@ -120,17 +120,17 @@ namespace Прогноз_погоды
             string response = await client.GetStringAsync(url_day_array);
             string result = response;
             var json = JObject.Parse(result);
-            var array1 = json["list"][1].ToString();
+
             time_temp1 = json["list"][1]["main"]["temp"].ToString();
             time_pressure1 = json["list"][1]["main"]["pressure"].ToString();
             time_wind_speed1 = json["list"][1]["wind"]["speed"].ToString();
             time_wind_description1 = json["list"][1]["weather"][0]["description"].ToString();
-            var array2 = json["list"][2].ToString();
+
             time_temp2 = json["list"][2]["main"]["temp"].ToString();
             time_pressure2 = json["list"][2]["main"]["pressure"].ToString();
             time_wind_speed2 = json["list"][2]["wind"]["speed"].ToString();
             time_wind_description2 = json["list"][2]["weather"][0]["description"].ToString();
-            var array3 = json["list"][3].ToString();
+
             time_temp3 = json["list"][3]["main"]["temp"].ToString();
             time_pressure3 = json["list"][3]["main"]["pressure"].ToString();
             time_wind_speed3 = json["list"][3]["wind"]["speed"].ToString();
@@ -151,5 +151,23 @@ namespace Прогноз_погоды
             }  
             return dota;
         }
+        public static string temp1 = "";
+        public static string pressure1 = "";
+        public static string wind_speed1 = "";
+        public static string description1 = "";
+
+
+        public static async void new_info(int id) 
+        {
+            UpdateUrl();
+            string info = await client.GetStringAsync(url_day_array);
+            string label_info = info;
+            var json = JObject.Parse(label_info);
+            temp1 = json["list"][id]["main"]["temp"].ToString();
+            pressure1 = json["list"][id]["main"]["pressure"].ToString();
+            wind_speed1 = json["list"][id]["wind"]["speed"].ToString();
+            description1 = json["list"][id]["weather"][0]["description"].ToString();
+        }
+
     }
 } 

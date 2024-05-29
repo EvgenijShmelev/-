@@ -71,7 +71,9 @@ namespace Прогноз_погоды
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form5 form = new Form5();
+            form.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -162,7 +164,8 @@ namespace Прогноз_погоды
 
         private void Button2_Click(object sender, EventArgs e)
         {
-
+            Kolokol form = new Kolokol();
+            form.ShowDialog();
         }
 
         private void Label5_Click(object sender, EventArgs e)
