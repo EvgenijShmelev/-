@@ -29,7 +29,25 @@ namespace Прогноз_погоды
 
         private void Kolokol_Load(object sender, EventArgs e)
         {
-
+            panel1.Visible = false;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            if (Form1.yvedomlenia == 1) 
+            {
+                panel1.Visible = true;
+            }
+            if (Form1.yvedomlenia == 2)
+            {
+                panel1.Visible = true;
+                panel2.Visible = true;
+            }
+            if (Form1.yvedomlenia == 3)
+            {
+                panel1.Visible = true;
+                panel2.Visible = true;
+                panel3.Visible = true;
+            }
         }
+
     }
 }
